@@ -31,9 +31,8 @@ public class MoviesActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_movies);
         lvMovies = (ListView) findViewById(R.id.lvMovies);
-
         // Create the adapter to convert the array to views
-        MoviesAdapter adapter = new MoviesAdapter(this, movies);
+        adapter = new MoviesAdapter(this, movies);
 
         // Attach the adapter to a ListView
         lvMovies.setAdapter(adapter);
